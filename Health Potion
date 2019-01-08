@@ -1,0 +1,11 @@
+import random          #This will import the random module that is contained in the Python3 Library.
+
+health = 50            #This is the initial health of the man.
+
+difficulty = 1         #This is the level of difficulty of the game.Here it is 'easy'.
+
+potion_health = int(random.randint(25,50) / difficulty)          #The randint() function generates a random integer between 25 and 50 &the potion_health will depend over the difficulty set above. Since in Python3 division gives a float result ,we will perform the casting such that potion_health stores only integer value after division.  
+
+health = health + potion_health         #This shows that the health of the potion is being added to the actual health.
+
+print(health)          #This will display the final health of the man.

@@ -1,0 +1,17 @@
+#Enter your Name
+name = input("What is your name? : ")
+
+#Enter your Age
+age = input("How old are you? :")
+
+#Enter your City
+city = input("Which city do you live in? :")
+
+#Enter your Hobby
+hobby = input("What is your hobby? :")
+
+string = "My name is {} and I am {} years old. I live in {} and I love to enjoy {} !!!"                    #This creates storage spaces which will be filled by the variable inputs.
+
+output = string.format(name,age,city,hobby)                                          
+
+print(output)

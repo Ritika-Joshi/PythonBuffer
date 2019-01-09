@@ -1,0 +1,9 @@
+email = input("What is your email address? :")                  #Taking the email from the user
+
+user = email[:email.index("@")]                                 #Slices the email from beginning upto the @ symbol
+
+domain = email[email.index("@") + 1 :]                          #Slices the email from one place after the @ symbol upto the whole email
+
+output = "Your Username is {} and your Domain name is {}".format(user,domain)                   #Using the format() , mapping of variables is done
+
+print(output)                                                    #Prints the required output

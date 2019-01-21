@@ -1,0 +1,28 @@
+known_users = ["Alice" , "Bob" , "Peter" , "Sam" , "Nicky" , "Joseph" , "Maria"]                         #This creates a list of the known users in a system.
+
+while True:                                                                                            #Runs the loop forever
+          print("Hello ! My name is Travis.....")
+          
+          name = input("What is your name? :")
+          
+          if name in known_users:
+                print("Hello {} !! Welcome to our Security System....".format(name))
+                
+                remove_user = input("Do you want to be removed from the system? : (y or n)").strip().lower()                #For removing a particular user from the system
+                
+                if remove_user == 'y':
+                       known_users.remove(name)
+                elif remove_user == 'n':
+                        print("No problem ! I also don't want to remove you from the system....")
+                        
+                        
+                        
+          else:
+                print("Sorry {} !! You don't seem to be a member of our System...".format(name))
+                
+                add_user = input("Do you want to be added into the system? : (y or n)").strip().lower()                     # #For adding a particular user tp the system
+                        
+                if add_user == 'y':
+                       known_users.append(name)
+                elif add_user == 'n':
+                        print("No problem ! See you later....")

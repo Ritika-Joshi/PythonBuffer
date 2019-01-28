@@ -1,0 +1,30 @@
+films = {                                                         #Databse of the films 
+  
+    "Finding Nemo":[9,13] ,
+    "Tarzan":[18,8] ,
+    "The Lion King":[6,4] ,
+    "Harry Potter":[17,11] ,
+    "Twilight":[20,1]
+}
+
+while(True):
+    choice = input("Which film do you want to watch ? :").strip().title()                      #User Input
+    
+    if choice in films:
+          age = int(input("What is your age? :").strip())                               #Since the input age will be accepted as string
+ 
+          if age >= films[choice][0]:                                               #Conditon for age
+                 
+               seats = films[choice][1]
+               
+               if seats > 0:                                                        #Condition for Seats
+                    films[choice][1] = films[choice][1] - 1
+                    print("Go ahead!!!!")
+               else:
+                  print("Sold out")
+          else:
+             print("Sorry....You cannot watch this film")
+              
+              
+    else:
+        print("Sorry....This film is not available")

@@ -1,0 +1,13 @@
+from random import choice                                             #random.choice can also be used
+
+questions = ["Why is the Sky Blue? :" , "Why is Sun so Bright? :" ,"Why are we too small? :" , "Why is Moon White? :"]        #List of questions
+
+question = choice(questions)                                            #Selects a random question
+
+answer = input(question).strip().title()                                #Takes user input for the questions asked
+
+while answer != "Just Because":                                         #Until the reason is justified
+    answer = input("Why? :").strip().title()
+    
+    
+print("Ohhh...OKAAAYYY!!!")                                              #Else condition
